@@ -22,6 +22,7 @@ import { SearchbarPage } from '../pages/searchbar/searchbar';
 import { JadualslidesPage } from '../pages/jadualslides/jadualslides';
 import { AsramaPage } from '../pages/asrama/asrama';
 import { PeperiksaanPage } from '../pages/peperiksaan/peperiksaan';
+import { StudentpscychometricPage } from '../pages/studentpscychometric/studentpscychometric';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -48,7 +49,8 @@ import {DashboardPage} from "../pages/dashboard/dashboard";
       SearchbarPage,
       JadualslidesPage,
       AsramaPage,
-      PeperiksaanPage
+      PeperiksaanPage,
+      StudentpscychometricPage
   ],
   imports: [
       BrowserModule,
@@ -76,7 +78,8 @@ import {DashboardPage} from "../pages/dashboard/dashboard";
       SearchbarPage,
       JadualslidesPage,
       AsramaPage,
-      PeperiksaanPage
+      PeperiksaanPage,
+      StudentpscychometricPage
   ],
   providers: [
     StatusBar,
