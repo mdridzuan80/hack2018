@@ -13,16 +13,16 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding *ngFor="let profile of profiles">
     <ion-card>
 
         <ion-item>
             <ion-avatar item-start>
-                <img src="assets/imgs/user/woman.png">
+                <img src="assets/imgs/user/people.png">
             </ion-avatar>
-            <h2>ARIF ANUAR BIN ROSLI</h2>
-            <p>AC97908</p>
-            <p>ILP Kuala Lumpur</p>
+            <h2>{{profile.nama}}</h2>
+            <p>{{profile.no_matrik}}</p>
+            <p>{{profile.institut}}</p>
 
         </ion-item>
 
@@ -34,11 +34,11 @@
             <ion-grid>
                 <ion-row>
                     <ion-col col-6>No KP :</ion-col>
-                    <ion-col col-6>950416145457</ion-col>
+                    <ion-col col-6>790202105294</ion-col>
                 </ion-row>
                 <ion-row>
                     <ion-col col-6>Jantina :</ion-col>
-                    <ion-col col-6>Lelaki</ion-col>
+                    <ion-col col-6>Perempuan</ion-col>
                 </ion-row>
                 <ion-row>
                     <ion-col col-6>Alamat :</ion-col>
@@ -75,7 +75,7 @@
         <ion-card-content>
             <button ion-button block icon-start (click)="careerpath()">
                 <ion-icon ios="ios-key" md="md-key"></ion-icon>
-               Laluan Kerjaya
+                Laluan Kerjaya
             </button>
             <button ion-button block icon-start (click)="psychometric()" color="biru">
                 <ion-icon ios="ios-paper" md="md-paper"></ion-icon>
@@ -89,38 +89,38 @@
     </ion-card>
 </ion-content>
 
-    <ion-footer>
-        <ion-toolbar>
+<ion-footer>
+    <ion-toolbar>
         <ion-grid>
             <ion-row>
-               <ion-col>
-                    <button ion-button icon-only color="merah" (click)="openProfilePage()">
+                <ion-col>
+                    <button ion-button icon-only color="merah" block icon-start (click)="openProfilePage()">
                         <ion-icon name="heart"></ion-icon>
                     </button>
                 </ion-col>
                 <ion-col>
-                    <button ion-button icon-only color="oren" (click)="openPeperiksaanPage()">
+                    <button ion-button icon-only color="oren" block icon-start (click)="openPeperiksaanPage()">
                         <ion-icon name="school"></ion-icon>
                     </button>
                 </ion-col>
                 <ion-col>
-                    <button ion-button icon-only color="hijau" (click)="openSearchbarPage()">
+                    <button ion-button icon-only color="hijau" block icon-start (click)="openSearchbarPage()">
                         <ion-icon name="book"></ion-icon>
                     </button>
                 </ion-col>
                 <ion-col>
-                    <button ion-button icon-only color="biru" (click)="openAsramaPage()">
+                    <button ion-button icon-only color="kuning" block icon-start (click)="openAsramaPage()">
                         <ion-icon name="podium"></ion-icon>
                     </button>
                 </ion-col>
                 <ion-col>
-                    <button ion-button icon-only color="magenta" (click)="openJadualslidesPage()">
+                    <button ion-button icon-only color="magenta" block icon-start (click)="openJadualslidesPage()">
                         <ion-icon name="create"></ion-icon>
                     </button>
                 </ion-col>
             </ion-row>
         </ion-grid>
-            </ion-toolbar>
-    </ion-footer>
+    </ion-toolbar>
+</ion-footer>
 
 

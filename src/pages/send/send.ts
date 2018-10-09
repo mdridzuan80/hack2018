@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {PeperiksaanPage} from "../peperiksaan/peperiksaan";
-import {ApplicationformPage} from "../applicationform/applicationform";
-import {DashboardPage} from "../dashboard/dashboard";
 
 /**
  * Generated class for the SendPage page.
@@ -24,9 +21,5 @@ export class SendPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad SendPage');
   }
-
-    next(item) {
-        this.navCtrl.setRoot(ApplicationformPage);
-    }
 
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {PeperiksaanPage} from "../peperiksaan/peperiksaan";
+import {ResultstatusPage} from "../resultstatus/resultstatus";
 import {SearchbarPage} from "../searchbar/searchbar";
 import {JadualslidesPage} from "../jadualslides/jadualslides";
 import {AsramaPage} from "../asrama/asrama";
@@ -27,13 +27,12 @@ export class CareerpathPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CareerpathPage');
   }
-
     openProfilePage(item) {
         this.navCtrl.setRoot(ProfilePage);
     }
 
-    openPeperiksaanPage(item) {
-        this.navCtrl.setRoot(PeperiksaanPage);
+    openResultstatusPage(item) {
+        this.navCtrl.setRoot(ResultstatusPage);
     }
 
     openSearchbarPage(item) {
@@ -47,5 +46,4 @@ export class CareerpathPage {
     openAsramaPage(item) {
         this.navCtrl.setRoot(AsramaPage);
     }
-
 }

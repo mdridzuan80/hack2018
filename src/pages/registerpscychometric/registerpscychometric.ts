@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {SendpsychometricPage} from "../sendpsychometric/sendpsychometric";
+import {ProfilePage} from "../profile/profile";
+import {ResultstatusPage} from "../resultstatus/resultstatus";
+import {SearchbarPage} from "../searchbar/searchbar";
+import {JadualslidesPage} from "../jadualslides/jadualslides";
+import {AsramaPage} from "../asrama/asrama";
 
 /**
  * Generated class for the RegisterpscychometricPage page.
@@ -22,9 +26,5 @@ export class RegisterpscychometricPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterpscychometricPage');
   }
-
-    next() {
-        this.navCtrl.push(SendpsychometricPage);
-    }
 
 }

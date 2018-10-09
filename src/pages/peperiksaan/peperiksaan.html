@@ -1,74 +1,24 @@
-<!--&lt;!&ndash;-->
-  <!--Generated template for the PeperiksaanPage page.-->
-
-  <!--See http://ionicframework.com/docs/components/#navigation for more info on-->
-  <!--Ionic pages and navigation.-->
-<!--&ndash;&gt;-->
-<!--<ion-header>-->
-
-  <!--<ion-navbar>-->
-    <!--<ion-title>RESULT  <button ion-button item-end secondary menuToggle>BACK</button>-->
-    <!--</ion-title>-->
-  <!--</ion-navbar>-->
-<!--</ion-header>-->
-
-<!--<ion-content>-->
-    <!--<ion-item>-->
-        <!--&lt;!&ndash;<ion-avatar item-start>&ndash;&gt;-->
-            <!--&lt;!&ndash;&lt;!&ndash;<img src="../../assets/imgs/avatar-cher.jpg" align="middle" width="100%">&ndash;&gt;&ndash;&gt;-->
-        <!--&lt;!&ndash;</ion-avatar>&ndash;&gt;-->
-        <!--<img src="../../assets/imgs/avatar-cher.jpg" item-start width="50px">-->
-        <!--<ion-item *ngFor="let user of users">-->
-            <!--<h1>NO NDP : {{ user.NDP }}</h1>-->
-            <!--<h2>NAMA : {{ user.NAMA }} {{user.last_name}}</h2>-->
-            <!--<p>NO KP : {{ user.NO_KP }}</p></ion-item>-->
-        <!--&lt;!&ndash;<p>I've had a pretty messed up day. If we just...</p>&ndash;&gt;-->
-    <!--</ion-item>-->
-    <!--<ion-item-group>-->
-      <!--<ion-item-divider color="secondary">PROFIL PELAJAR</ion-item-divider>-->
-      <!--&lt;!&ndash;<ion-item>Nama : Ahmad bin Abu</ion-item>&ndash;&gt;-->
-      <!--&lt;!&ndash;<ion-item>NDP : 121313 </ion-item>&ndash;&gt;-->
-      <!--<ion-item>Kursus : Sijil TMR </ion-item>-->
-      <!--<ion-item>Semester : 2 </ion-item>-->
-    <!--</ion-item-group>-->
-  <!--<ion-item-group>-->
-      <!--<ion-item-divider color="primary">KEPUTUSAN PEPERIKSAAN</ion-item-divider>-->
-      <!--<ion-item>Kod Subjek : A234</ion-item>-->
-      <!--<ion-item>Subjek : Rangkaian Setempat</ion-item>-->
-      <!--<ion-item>Markah : 3.34</ion-item>-->
-      <!--<ion-item>Status : LULUS</ion-item>-->
-    <!--</ion-item-group>-->
-<!--</ion-content>-->
-<!--<script type="text/javascript" src="js/ng-cordova.min.js" ></script>-->
-
-<body ng-app="starter" ng-controller="barctl">
-
-<!--<button class="button button-positive" ng-click="scan()" >scan</button>-->
 <ion-header>
-    <ion-navbar>
-        <!--<button ion-button menuToggle>-->
-            <!--<ion-icon name="menu"></ion-icon>-->
-        <!--</button>-->
+    <ion-navbar color="biru">
         <ion-title>KEPUTUSAN PEPERIKSAAN</ion-title>
     </ion-navbar>
 </ion-header>
-<ion-content padding-top="">
-    <ion-item>
-    <!--&lt;!&ndash;<ion-avatar item-start>&ndash;&gt;-->
-    <!--&lt;!&ndash;&lt;!&ndash;<img src="../../assets/imgs/avatar-cher.jpg" align="middle" width="100%">&ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;</ion-avatar>&ndash;&gt;-->
-    <img src="../../assets/imgs/avatar-cher.jpg" item-start width="70px">
-    <!--<ion-item *ngFor="let user of users">-->
+<ion-content padding>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="../../assets/imgs/people.png" >
+            </ion-avatar>
+            <h2>Ariff Anuar Bin Rosli</h2>
+            <p>AC97908</p>
+            <p>ILP Kuala Lumpur</p>
+        </ion-item>
 
-    <!--<h1>NO NDP : {{ user.NDP }}</h1>-->
-    <h1>NO NDP : 01292833</h1>
-    <!--<h2>NAMA : {{ user.NAMA }} {{user.last_name}}</h2>-->
-    <h2>NAMA : ZAWAWI </h2>
-    <!--<p>NO KP : {{ user.NO_KP }}</p></ion-item>-->
-    <p>NO KP : 829383847534 </p>
-    </ion-item>
-
-    <button ion-button full>Maklumat Pelajar</button>
+    </ion-card>
+    <button ion-button icon-start block color="merah">
+        <ion-icon name="heart"></ion-icon>
+        Maklumat Pelajar
+    </button>
     <table ion-view width="320" border="0" cellpadding="20">
         <br>
 
@@ -100,14 +50,17 @@
         <td padding-left="20">GPA</td>
         <td>:</td>
         <td><strong>3.74</strong></td>
-    <tr>
-        <td padding-left="20">CGPA</td>
-        <td>:</td>
-        <td><strong>3.10</strong></td>
-    </tr>
+        <tr>
+            <td padding-left="20">CGPA</td>
+            <td>:</td>
+            <td><strong>3.10</strong></td>
+        </tr>
     </table><br>
-    <button ion-button full color="secondary">Keputusan Peperiksaan</button>
-    <table width="100%" border="0" justify-content-center="center" cellspacing="10" cellpadding="10">
+    <button ion-button icon-start block color="merah">
+        <ion-icon name="heart"></ion-icon>
+        Keputusan Mengikut Subjek
+    </button>
+    <table width="100%" border="0" cellspacing="10" cellpadding="10">
         <tr bgcolor="#696969">
             <td></td>
             <td>Bil</td>
@@ -124,34 +77,8 @@
             <td text-center="">A</td>
             <td>&nbsp;</td>
         </tr>
-        <tr>
-            <td></td>
-            <td>2</td>
-            <td>Sains</td>
-            <td>&nbsp;</td>
-            <td text-center="">A</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>3</td>
-            <td>Sistem Maklumat</td>
-            <td>&nbsp;</td>
-            <td text-center="">B</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
     </table>
-
 </ion-content>
-</body>
 
 <ion-footer>
     <ion-toolbar>
