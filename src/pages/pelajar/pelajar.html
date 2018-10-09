@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Dashboard Pelajar</ion-title>
+    </ion-navbar>
+    <ion-list>
+        <ion-item>
+            <!--<ion-avatar item-start>-->
+            <!--&lt;!&ndash;<img src="../../assets/imgs/avatar-cher.jpg" align="middle" width="100%">&ndash;&gt;-->
+            <!--</ion-avatar>-->
+            <img src="../../assets/imgs/avatar-cher.jpg" item-start width="50px">
+            <ion-item *ngFor="let user of users">
+                <h1>NO NDP : {{ user.NDP }}</h1>
+                <h2>NAMA : {{ user.NAMA }} {{user.last_name}}</h2>
+                <p>NO KP : {{ user.NO_KP }}</p></ion-item>
+            <!--<p>I've had a pretty messed up day. If we just...</p>-->
+        </ion-item>
+    </ion-list>
+</ion-header>
+
+<ion-content>
+    <ion-item-divider color="dark">MAKLUMAT PELAJAR</ion-item-divider>
+    <!--<button ion-button block name="primary" color="primary">PROFILE</button>-->
+    <button ion-button color="secondary" block (click)="goListPage()"><ion-icon name="person" color="danger" icon-start>  </ion-icon>  PROFIL</button>
+    <button ion-button  color="light" block (click)="goBasicPage()">PEPERIKSAAN</button>
+    <button ion-button block color="danger">PERPUSTAAAKN</button>
+    <button ion-button block color="dark">ASRAMA</button>
+    <button ion-button block color="light">JADUAL</button>
+</ion-content>
+

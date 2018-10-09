@@ -1,0 +1,22 @@
+<ion-content padding>
+  <h2>Add User</h2>
+  <form (submit)="$event.saveUser()">
+    <ion-item>
+      <ion-label>NO NDP</ion-label>
+      <ion-input type="text" [ngModel]="user.NDP" name="NDP"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>NAMA</ion-label>
+      <ion-input type="text" [ngModel]="user.NAMA" name="NAMA"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>NO KP</ion-label>
+      <ion-input type="text" [ngModel]="user.NO_KP" name="NO_KP"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>INSTITUT</ion-label>
+      <ion-input type="text" [ngModel]="user.INSTITUT" name="INSTITUT"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Add New User</button>
+  </form>
+</ion-content>

@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+<<<<<<< HEAD
 import {ProfilePage} from "../profile/profile";
 import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
 import {Http} from "@angular/http";
 import {ResultstatusPage} from "../resultstatus/resultstatus";
 import {ProfileparentPage} from "../profileparent/profileparent";
+=======
+import {ProfilPage} from "../profil/profil";
+import { Storage } from '@ionic/storage';
+import { AlertController } from 'ionic-angular';
+import {Http} from "@angular/http";
+// import {ResultstatusPage} from "../resultstatus/resultstatus";
+>>>>>>> feff2ad... update terkini
 
 /**
  * Generated class for the LoginPage page.
@@ -24,7 +32,10 @@ export class LoginPage {
     public username: string = '';
     public password: string = '';
     response:any = '';
+<<<<<<< HEAD
     data:any = '';
+=======
+>>>>>>> feff2ad... update terkini
     public nokp: number;
     public name: string = '';
     surveyResult: any = [];
@@ -75,11 +86,16 @@ export class LoginPage {
                     this.response = data.json();
                     console.log(this.response);
 
+<<<<<<< HEAD
                     var status = this.response.meta.saveStatus;
+=======
+                    var status = this.response.saveStatus;
+>>>>>>> feff2ad... update terkini
                     // var employer_name = this.response.employer_name;
                     // var employer_id = this.response.employer_id;
 
                     loading.dismiss();
+<<<<<<< HEAD
                     // var data;
                     console.log('savesatatus' + this.response.meta.saveStatus);
                     console.log('peranan' + this.response.data.peranan);
@@ -104,6 +120,22 @@ export class LoginPage {
                         this.showAlert('Maaf Tidak Berjaya', 'Sila cuba sekali lagi pada masa akan datang');
                     //
                     }
+=======
+
+                    // if (status == 'pass') {
+                        this.showAlert('Nama : ' + this.response.name, 'Selamat Datang!');
+
+                        //letak employer_name & id dalam storage
+                        this.storage.ready().then(() => {
+                            this.storage.set('nokp', this.response.nokp);
+                            this.storage.set('name', this.response.name);
+                        });
+                        this.navCtrl.push(ProfilPage);
+                    // } else {
+                    //     this.showAlert('Maaf Tidak Berjaya', 'Sila cuba sekali lagi pada masa akan datang');
+                    //
+                    // }
+>>>>>>> feff2ad... update terkini
                 }, error => {
                     loading.dismiss();
                     this.showAlert('Ralat', 'Gagal menghantar pengesahan ke server');
