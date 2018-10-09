@@ -42,7 +42,7 @@ export class MyApp {
         { title: 'Ujian Psikometrik', component: PscychometricPage },
         { title: 'Info', component: InfoPage },
         // { title: 'Dashboard', component: DashboardPage }
-        { title: 'AsramaPage', component: AsramaPage }
+        // { title: 'AsramaPage', component: AsramaPage }
 
 
     ];

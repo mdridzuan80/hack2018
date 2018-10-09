@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SendpsychometricPage} from "../sendpsychometric/sendpsychometric";
 
 /**
  * Generated class for the RegisterpscychometricPage page.
@@ -21,5 +22,9 @@ export class RegisterpscychometricPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterpscychometricPage');
   }
+
+    next() {
+        this.navCtrl.push(SendpsychometricPage);
+    }
 
 }

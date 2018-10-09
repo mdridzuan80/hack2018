@@ -23,6 +23,8 @@ import { JadualslidesPage } from '../pages/jadualslides/jadualslides';
 import { AsramaPage } from '../pages/asrama/asrama';
 import { PeperiksaanPage } from '../pages/peperiksaan/peperiksaan';
 import { StudentpscychometricPage } from '../pages/studentpscychometric/studentpscychometric';
+import { ListilpPage } from '../pages/listilp/listilp';
+import { SendpsychometricPage } from '../pages/sendpsychometric/sendpsychometric';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -50,7 +52,9 @@ import {DashboardPage} from "../pages/dashboard/dashboard";
       JadualslidesPage,
       AsramaPage,
       PeperiksaanPage,
-      StudentpscychometricPage
+      StudentpscychometricPage,
+      ListilpPage,
+      SendpsychometricPage
   ],
   imports: [
       BrowserModule,
@@ -79,7 +83,9 @@ import {DashboardPage} from "../pages/dashboard/dashboard";
       JadualslidesPage,
       AsramaPage,
       PeperiksaanPage,
-      StudentpscychometricPage
+      StudentpscychometricPage,
+      ListilpPage,
+      SendpsychometricPage
   ],
   providers: [
     StatusBar,

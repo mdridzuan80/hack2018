@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {PeperiksaanPage} from "../peperiksaan/peperiksaan";
 import {ApplicationformPage} from "../applicationform/applicationform";
-import {DashboardPage} from "../dashboard/dashboard";
+import {PscychometricPage} from "../pscychometric/pscychometric";
 
 /**
- * Generated class for the SendPage page.
+ * Generated class for the SendpsychometricPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,20 +12,20 @@ import {DashboardPage} from "../dashboard/dashboard";
 
 @IonicPage()
 @Component({
-  selector: 'page-send',
-  templateUrl: 'send.html',
+  selector: 'page-sendpsychometric',
+  templateUrl: 'sendpsychometric.html',
 })
-export class SendPage {
+export class SendpsychometricPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SendPage');
+    console.log('ionViewDidLoad SendpsychometricPage');
   }
 
     next(item) {
-        this.navCtrl.setRoot(ApplicationformPage);
+        this.navCtrl.setRoot(PscychometricPage);
     }
 
 }

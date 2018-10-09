@@ -23,7 +23,7 @@ export class ListilpPage {
     response: any = '';
     heroes: any = '';
     language: string = '';
-    employer_code:string;
+    // employer_code:string;
 
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
