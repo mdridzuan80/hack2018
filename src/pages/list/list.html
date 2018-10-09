@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-navbar color="biru">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Senarai ILP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list radio-group [(ngModel)]="answer">
+    <ion-list-header>
+     Lokasi ILP
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Kedah/Perlis</ion-label>
+      <ion-radio value="Kedah/Perlis"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Pulau Pinang</ion-label>
+      <ion-radio value="Pulau Pinang"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Perak</ion-label>
+      <ion-radio value="Perak"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Melaka</ion-label>
+      <ion-radio value="Melaka"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Negeri Sembilan</ion-label>
+      <ion-radio value="Negeri Sembilan"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Johor</ion-label>
+      <ion-radio value="Johor"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Kelantan</ion-label>
+      <ion-radio value="Kelantan"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Terengganu</ion-label>
+      <ion-radio value="Terengganu"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Pahang</ion-label>
+      <ion-radio value="Pahang"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sabah</ion-label>
+      <ion-radio value="Sabah"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sarawak</ion-label>
+      <ion-radio value="Sarawak"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Selangor</ion-label>
+      <ion-radio value="Selangor"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Wilayah Persekutuan/Putrajaya</ion-label>
+      <ion-radio value="Wilayah Persekutuan/Putrajaya"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <ion-footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button full icon-start color="oren" (click)="back()">
+            <ion-icon name="arrow-dropleft"></ion-icon>
+            Sebelumnya
+          </button>
+          <button ion-button full icon-end (click)="next()" disabled *ngIf="answer == ''">
+            Seterusnya
+            <ion-icon name="arrow-dropright"></ion-icon>
+          </button>
+          <button ion-button full icon-end (click)="next()" *ngIf="answer != ''">
+            Seterusnya
+            <ion-icon name="arrow-dropright"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+
+
+</ion-content>

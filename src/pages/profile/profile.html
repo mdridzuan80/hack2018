@@ -1,0 +1,123 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="biru">
+        <ion-title>Profail Saya</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/imgs/user/woman.png">
+            </ion-avatar>
+            <h2>Nor Azwin Binti Sani</h2>
+            <p>AC97908</p>
+            <p>ILP Kuala Lumpur</p>
+
+        </ion-item>
+
+        <ion-card-content>
+            <button ion-button icon-start block color="merah">
+                <ion-icon name="heart"></ion-icon>
+                Maklumat Peribadi
+            </button>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-6>No KP :</ion-col>
+                    <ion-col col-6>790202105294</ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-6>Jantina :</ion-col>
+                    <ion-col col-6>Perempuan</ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-6>Alamat :</ion-col>
+                    <ion-col col-6>39, Jalan Nusaputra 1/2D, Bandar Nuspautra</ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-6>No Tel :</ion-col>
+                    <ion-col col-6>0196778878</ion-col>
+                </ion-row>
+            </ion-grid>
+
+            <button ion-button icon-start block color="hijau">
+                <ion-icon name="school"></ion-icon>
+                Maklumat Kursus
+            </button>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-6>Nama Kursus :</ion-col>
+                    <ion-col col-6>Sains Komputer</ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-6>Kod Kursus :</ion-col>
+                    <ion-col col-6>L01</ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-6>Sesi Semasa :</ion-col>
+                    <ion-col col-6>2/2018</ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-content>
+            <button ion-button block icon-start (click)="careerpath()">
+                <ion-icon ios="ios-key" md="md-key"></ion-icon>
+               Laluan Kerjaya
+            </button>
+            <button ion-button block icon-start (click)="psychometric()" color="biru">
+                <ion-icon ios="ios-paper" md="md-paper"></ion-icon>
+                Ujian Psikometrik
+            </button>
+            <button ion-button block icon-start (click)="jobsmalaysia()">
+                <ion-icon ios="ios-finger-print" md="md-finger-print"></ion-icon>
+                JobsMalaysia
+            </button>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-footer>
+        <ion-grid>
+            <ion-row>
+               <ion-col>
+                    <button ion-button icon-only color="merah">
+                        <ion-icon name="heart"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="oren">
+                        <ion-icon name="school"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="hijau">
+                        <ion-icon name="book"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="biru">
+                        <ion-icon name="podium"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="magenta">
+                        <ion-icon name="create"></ion-icon>
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-footer>
+
+</ion-content>
