@@ -10,6 +10,7 @@ import { InfoPage } from '../pages/info/info';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import {PscychometricPage} from "../pages/pscychometric/pscychometric";
 
 @Component({
   templateUrl: 'app.html'
@@ -33,6 +34,7 @@ export class MyApp {
         { title: 'Borang Permohonan', component: ApplicationformPage },
         { title: 'Semak Status Permohonan', component: StatusPage },
       { title: 'Senarai ILP', component: ListPage },
+        { title: 'Ujian Psikometrik', component: PscychometricPage },
         { title: 'Info', component: InfoPage }
 
 

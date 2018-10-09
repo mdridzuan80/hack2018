@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ResultstatusPage} from "../resultstatus/resultstatus";
-import {SendPage} from "../send/send";
+import {RegisterpscychometricPage} from "../registerpscychometric/registerpscychometric";
 
 /**
- * Generated class for the ApplicationformPage page.
+ * Generated class for the PscychometricPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,20 +11,21 @@ import {SendPage} from "../send/send";
 
 @IonicPage()
 @Component({
-  selector: 'page-applicationform',
-  templateUrl: 'applicationform.html',
+  selector: 'page-pscychometric',
+  templateUrl: 'pscychometric.html',
 })
-export class ApplicationformPage {
+export class PscychometricPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ApplicationformPage');
+    console.log('ionViewDidLoad PscychometricPage');
   }
 
     next() {
-        this.navCtrl.push(SendPage);
+        this.navCtrl.push(RegisterpscychometricPage);
     }
+
 
 }

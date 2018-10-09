@@ -27,17 +27,91 @@
           <ion-input type="text" [(ngModel)]="employer_code" placeholder="[ 890101146677 ]"></ion-input>
         </ion-item>
 
-        <!--<ion-item>-->
-        <!--<ion-input type="text" placeholder="Sesi"></ion-input>-->
-        <!--</ion-item>-->
-
-        <!-- Float the icon left -->
-        <button ion-button block icon-start (click)="verifyEmployerID()">
-          <ion-icon name="search"></ion-icon>
-          Borang Permohonan
+        <button ion-button icon-start block color="merah">
+          <ion-icon name="heart"></ion-icon>
+          Maklumat Peribadi
         </button>
+        <ion-grid>
+          <ion-row>
 
+            <ion-item>
+              <ion-label>No KP :</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Nama :</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Alamat :</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Emel :</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Angka Giliran :</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+          </ion-row>
+        </ion-grid>
+
+        <button ion-button icon-start block color="hijau">
+          <ion-icon name="school"></ion-icon>
+          Maklumat Kursus
+        </button>
+        <ion-grid>
+          <ion-row>
+
+            <ion-item>
+              <ion-label>Kursus Pilihan :</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>ILP Pilihan :</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+          </ion-row>
+        </ion-grid>
+
+        <button ion-button icon-start block>
+          <ion-icon ios="ios-checkbox" md="md-checkbox"></ion-icon>
+          Aku Janji Pelajar
+        </button>
+        <ion-grid>
+          <ion-row>
+            <ion-item>
+              <ion-label>Semua maklumat adalah benar</ion-label>
+              <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Kursus yang dipilih boleh ditukar oleh pihak JTM</ion-label>
+              <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            </ion-item>
+          </ion-row>
+        </ion-grid>
       </ion-list>
     </ion-card-content>
   </ion-card>
+
+  <ion-footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button full icon-right (click)="next()" color="oren"> Hantar Permohonan <ion-icon name="arrow-dropright"></ion-icon></button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+
+
 </ion-content>
