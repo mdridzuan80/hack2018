@@ -45,9 +45,41 @@
     <!--<script src="/js/jquery-1.12.4.min.js"></script>-->
     <!--<script src="/bootstrap/js/bootstrap.min.js"></script>-->
     <!--<script id="bs-live-reload" data-sseport="61659" data-lastchange="1538711477158" src="/js/livereload.js"></script>-->
-
+    </div>
 </ion-list>
 
-    <button ion-button secondary menuToggle>Kembali</button>
-
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <button ion-button icon-only color="merah" block icon-start (click)="openProfilePage()">
+                        <ion-icon name="heart"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="oren" block icon-start (click)="openResultstatusPage()">
+                        <ion-icon name="school"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="hijau" block icon-start (click)="openSearchbarPage()">
+                        <ion-icon name="book"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="kuning" block icon-start (click)="openAsramaPage()">
+                        <ion-icon name="podium"></ion-icon>
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-only color="magenta" block icon-start (click)="openJadualslidesPage()">
+                        <ion-icon name="create"></ion-icon>
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-footer>

@@ -11,6 +11,10 @@ import { InfoPage } from '../pages/info/info';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import {PscychometricPage} from "../pages/pscychometric/pscychometric";
+import {DashboardPage} from "../pages/dashboard/dashboard";
+import {SearchbarPage} from "../pages/searchbar/searchbar";
+import { JadualslidesPage } from '../pages/jadualslides/jadualslides'
+import { AsramaPage } from '../pages/asrama/asrama'
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +24,8 @@ export class MyApp {
 
   // rootPage: any = HomePage; -- cth
   // rootPage: any = LoginPage; --betul
-  rootPage: any = LoginPage;
+  // rootPage: any = LoginPage;
+  rootPage: any = DashboardPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -35,7 +40,9 @@ export class MyApp {
         { title: 'Semak Status Permohonan', component: StatusPage },
       { title: 'Senarai ILP', component: ListPage },
         { title: 'Ujian Psikometrik', component: PscychometricPage },
-        { title: 'Info', component: InfoPage }
+        { title: 'Info', component: InfoPage },
+        // { title: 'Dashboard', component: DashboardPage }
+        { title: 'AsramaPage', component: AsramaPage }
 
 
     ];

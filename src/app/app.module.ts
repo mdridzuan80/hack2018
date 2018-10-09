@@ -18,14 +18,15 @@ import { PscychometricPage } from '../pages/pscychometric/pscychometric';
 import { RegisterpscychometricPage } from '../pages/registerpscychometric/registerpscychometric';
 import { CareerpathPage } from '../pages/careerpath/careerpath';
 import { JobsmalaysiaPage } from '../pages/jobsmalaysia/jobsmalaysia';
-import { StudentpscychometricPage } from '../pages/studentpscychometric/studentpscychometric';
-import { ProfileparentPage } from '../pages/profileparent/profileparent';
-import { ListilpPage } from '../pages/listilp/listilp';
-
+import { SearchbarPage } from '../pages/searchbar/searchbar';
+import { JadualslidesPage } from '../pages/jadualslides/jadualslides';
+import { AsramaPage } from '../pages/asrama/asrama';
+import { PeperiksaanPage } from '../pages/peperiksaan/peperiksaan';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {DashboardPage} from "../pages/dashboard/dashboard";
 
 @NgModule({
   declarations: [
@@ -43,9 +44,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       RegisterpscychometricPage,
       CareerpathPage,
       JobsmalaysiaPage,
-      StudentpscychometricPage,
-      ProfileparentPage,
-      ListilpPage
+      DashboardPage,
+      SearchbarPage,
+      JadualslidesPage,
+      AsramaPage,
+      PeperiksaanPage
   ],
   imports: [
       BrowserModule,
@@ -69,9 +72,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       RegisterpscychometricPage,
       CareerpathPage,
       JobsmalaysiaPage,
-      StudentpscychometricPage,
-      ProfileparentPage,
-      ListilpPage
+      DashboardPage,
+      SearchbarPage,
+      JadualslidesPage,
+      AsramaPage,
+      PeperiksaanPage
   ],
   providers: [
     StatusBar,

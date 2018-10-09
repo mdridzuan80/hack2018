@@ -21,5 +21,4 @@ export class JobsmalaysiaPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad JobsmalaysiaPage');
   }
-
 }

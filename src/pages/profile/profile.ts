@@ -8,6 +8,11 @@ import { AlertController } from 'ionic-angular';
 import {Http} from "@angular/http";
 import {ResultstatusPage} from "../resultstatus/resultstatus";
 import {StudentpscychometricPage} from "../studentpscychometric/studentpscychometric";
+import {LoginPage} from "../login/login";
+import {SearchbarPage} from "../searchbar/searchbar";
+import {JadualslidesPage} from "../jadualslides/jadualslides";
+import {AsramaPage} from "../asrama/asrama";
+import {PeperiksaanPage} from "../peperiksaan/peperiksaan";
 
 /**
  * Generated class for the ProfilePage page.
@@ -165,6 +170,24 @@ export class ProfilePage {
             buttons: ['OK']
         });
         alert.present();
+    openProfilePage(item) {
+        this.navCtrl.setRoot(ProfilePage);
+    }
+
+    openPeperiksaanPage(item) {
+        this.navCtrl.setRoot(PeperiksaanPage);
+    }
+
+    openSearchbarPage(item) {
+        this.navCtrl.setRoot(SearchbarPage);
+    }
+
+    openJadualslidesPage(item) {
+        this.navCtrl.setRoot(JadualslidesPage);
+    }
+
+    openAsramaPage(item) {
+        this.navCtrl.setRoot(AsramaPage);
     }
 
 }

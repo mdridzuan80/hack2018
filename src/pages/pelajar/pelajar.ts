@@ -4,6 +4,12 @@ import { AlertController } from 'ionic-angular';
 import { ListPage } from "../list/list";
 import { BasicPage } from "../navigation/pages";
 import {PeopleServiceProvider} from "../../providers/people-service/people-service";
+import {ProfilePage} from "../profile/profile";
+import {ResultstatusPage} from "../resultstatus/resultstatus";
+import {SearchbarPage} from "../searchbar/searchbar";
+import {JadualslidesPage} from "../jadualslides/jadualslides";
+import {AsramaPage} from "../asrama/asrama";
+import {PeperiksaanPage} from "../peperiksaan/peperiksaan";
 
 
 @Component({
@@ -139,6 +145,25 @@ goListPage(){
 }
     goBasicPage(){
         this.navCtrl.setRoot(BasicPage);
+    }
+    openProfilePage(item) {
+        this.navCtrl.setRoot(ProfilePage);
+    }
+
+    openPeperiksaanPage(item) {
+        this.navCtrl.setRoot(PeperiksaanPage);
+    }
+
+    openSearchbarPage(item) {
+        this.navCtrl.setRoot(SearchbarPage);
+    }
+
+    openJadualslidesPage(item) {
+        this.navCtrl.setRoot(JadualslidesPage);
+    }
+
+    openAsramaPage(item) {
+        this.navCtrl.setRoot(AsramaPage);
     }
 }
 

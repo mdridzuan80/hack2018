@@ -1,0 +1,280 @@
+<!--
+  Generated template for the JadualslidesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Jadual Slides</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides pager>
+
+    <ion-slide *ngFor="let slide of slides">
+
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="primary" menuToggle>Home</button>
+        </ion-buttons>
+      </ion-toolbar>
+
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+
+    </ion-slide>
+
+    <ion-slide>
+      <h1>ISNIN</h1>
+      <p>F02: TEKNOLOGI KOMPUTER (RANGKAIAN)</p>
+      <p>Sesi: 2/2018</p>
+      <p>Semester: 1</p>
+      <ion-card>
+        <ion-item color="light">
+          Fundamental of Network
+          <button ion-button item-end clear (click)="doAlertone('bottom')"><p>8.00 am - 9.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="danger">
+          Network Maintenance
+          <button ion-button item-end clear (click)="doAlerttwo('bottom')"><p>9.00 am - 10.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="dark">
+          Network Cable
+          <button ion-button item-end clear (click)="doAlertthree('bottom')" ><p>10.00 am - 11.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="secondary">
+          Mobile Maintenance
+          <button ion-button item-end clear (click)="doAlertfour('bottom')" ><p>11.00 am - 12.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="default">
+          Computer Application
+          <button ion-button item-end clear (click)="doAlertfive('bottom')"><p>12.00 pm to 1.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+      <h1>SELASA</h1>
+      <p>F02: TEKNOLOGI KOMPUTER (RANGKAIAN)</p>
+      <p>Sesi: 2/2018</p>
+      <p>Semester: 1</p>
+      <ion-card>
+        <ion-item color="light">
+          Fundamental of Network
+          <button ion-button item-end clear (click)="showOne('bottom')"><p>8.00 am - 9.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="danger">
+          Network Maintenance
+          <button ion-button item-end clear (click)="showTwo('bottom')"><p>9.00 am - 10.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="dark">
+          Network Cable
+          <button ion-button item-end clear (click)="showThree('bottom')" ><p>10.00 am - 11.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="secondary">
+          Mobile Maintenance
+          <button ion-button item-end clear (click)="showFour('bottom')" ><p>11.00 am - 12.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="default">
+          Computer Application
+          <button ion-button item-end clear (click)="showFive('bottom')"><p>12.00 pm to 1.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+      <h1>RABU</h1>
+      <p>F02: TEKNOLOGI KOMPUTER (RANGKAIAN)</p>
+      <p>Sesi: 2/2018</p>
+      <p>Semester: 1</p>
+      <ion-card>
+        <ion-item color="light">
+          Fundamental of Network
+          <button ion-button item-end clear (click)="showOne('bottom')"><p>8.00 am - 9.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="danger">
+          Network Maintenance
+          <button ion-button item-end clear (click)="showTwo('bottom')"><p>9.00 am - 10.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="dark">
+          Network Cable
+          <button ion-button item-end clear (click)="showThree('bottom')" ><p>10.00 am - 11.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="secondary">
+          Mobile Maintenance
+          <button ion-button item-end clear (click)="showFour('bottom')" ><p>11.00 am - 12.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="default">
+          Computer Application
+          <button ion-button item-end clear (click)="showFive('bottom')"><p>12.00 pm to 1.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+      <h1>KHAMIS</h1>
+      <p>F02: TEKNOLOGI KOMPUTER (RANGKAIAN)</p>
+      <p>Sesi: 2/2018</p>
+      <p>Semester: 1</p>
+      <ion-card>
+        <ion-item color="light">
+          Fundamental of Network
+          <button ion-button item-end clear (click)="showOne('bottom')"><p>8.00 am - 9.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="danger">
+          Network Maintenance
+          <button ion-button item-end clear (click)="showTwo('bottom')"><p>9.00 am - 10.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="dark">
+          Network Cable
+          <button ion-button item-end clear (click)="showThree('bottom')" ><p>10.00 am - 11.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="secondary">
+          Mobile Maintenance
+          <button ion-button item-end clear (click)="showFour('bottom')" ><p>11.00 am - 12.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="default">
+          Computer Application
+          <button ion-button item-end clear (click)="showFive('bottom')"><p>12.00 pm to 1.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+      <h1>JUMAAT</h1>
+      <p>F02: TEKNOLOGI KOMPUTER (RANGKAIAN)</p>
+      <p>Sesi: 2/2018</p>
+      <p>Semester: 1</p>
+      <ion-card>
+        <ion-item color="light">
+          Fundamental of Network
+          <button ion-button item-end clear (click)="showOne('bottom')"><p>8.00 am - 9.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="danger">
+          Network Maintenance
+          <button ion-button item-end clear (click)="showTwo('bottom')"><p>9.00 am - 10.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="dark">
+          Network Cable
+          <button ion-button item-end clear (click)="showThree('bottom')" ><p>10.00 am - 11.00 am</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="secondary">
+          Mobile Maintenance
+          <button ion-button item-end clear (click)="showFour('bottom')" ><p>11.00 am - 12.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+      <ion-card>
+        <ion-item color="default">
+          Computer Application
+          <button ion-button item-end clear (click)="showFive('bottom')"><p>12.00 pm to 1.00 pm</p></button>
+        </ion-item>
+      </ion-card>
+
+    </ion-slide>
+
+    </ion-slides>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-only color="merah" block icon-start (click)="openProfilePage()">
+            <ion-icon name="heart"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-only color="oren" block icon-start (click)="openPeperiksaanPage()">
+            <ion-icon name="school"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-only color="hijau" block icon-start (click)="openSearchbarPage()">
+            <ion-icon name="book"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-only color="kuning" block icon-start (click)="openAsramaPage()">
+            <ion-icon name="podium"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-only color="magenta" block icon-start (click)="openJadualslidesPage()">
+            <ion-icon name="create"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

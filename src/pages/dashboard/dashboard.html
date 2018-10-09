@@ -1,18 +1,35 @@
-<!--
-  Generated template for the DashboardPage page.
+<ion-card>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="../../assets/imgs/jata.png">
+    </ion-avatar>
+    <h2>MyTMS</h2>
+    <p>Permulaan kerjaya anda</p>
+  </ion-item>
 
-  <ion-navbar>
-    <ion-title>dashboard</ion-title>
-  </ion-navbar>
+  <img src="../../assets/imgs/MyTMS.png" width="100%" height="180">
 
-</ion-header>
+  <ion-card-content>
+    <p align="justify">Penerangan ringkas:
+      Aplikasi mudah alih ini dibangunkan untuk memudahkan pelajar mengakses semua maklumat bagi merancang dan melaksanakan rutin pembelajaran. Menyediakan juga modul permohonan, semakan dan info-info kursus yang di sediakan oleh ILJTM. Seterusnya membolehkan orang awam merancang perjalanan kerjaya mereka.</p>
+  </ion-card-content>
 
+  <ion-card>
+    <ion-card-content>
+      <button ion-button block icon-start (click)="openStatusPage()" color="danger">
+        <ion-icon ios="ios-student" md="md-key"></ion-icon>
+        AWAM
+      </button>
+      <button ion-button block icon-start (click)="openLoginPage()" color="secondary">
+        <ion-icon ios="ios-paper" md="md-paper"></ion-icon>
+        PELAJAR
+      </button>
+      <button ion-button block icon-start (click)="openLoginPage()" color="primary">
+        <ion-icon ios="ios-finger-print" md="md-finger-print"></ion-icon>
+        IBUBAPA
+      </button>
+    </ion-card-content>
+  </ion-card>
 
-<ion-content padding>
-
-</ion-content>
+</ion-card>

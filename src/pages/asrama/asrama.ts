@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
-// import { Storage } from "@ionic/storage";
-// import { Http } from "@angular/http";
 // import { PeopleServiceProvider } from '../../providers/people-service/people-service';
-import {ProfilePage} from "../profile/profile";
-// import {ResultstatusPage} from "../resultstatus/resultstatus";
+import {ResultstatusPage} from "../resultstatus/resultstatus";
 import {SearchbarPage} from "../searchbar/searchbar";
 import {JadualslidesPage} from "../jadualslides/jadualslides";
-import {AsramaPage} from "../asrama/asrama";
+import {ProfilePage} from "../profile/profile";
+import {PeperiksaanPage} from "../peperiksaan/peperiksaan";
 
 
 /**
- * Generated class for the PeperiksaanPage page.
+ * Generated class for the ProfilPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -19,10 +17,10 @@ import {AsramaPage} from "../asrama/asrama";
 
 @IonicPage()
 @Component({
-  selector: 'page-peperiksaan',
-  templateUrl: 'peperiksaan.html',
+  selector: 'page-asrama',
+  templateUrl: 'asrama.html',
 })
-export class PeperiksaanPage {
+export class AsramaPage{
     users: any;
     constructor(public navCtrl: NavController) {
         // this.getUsers();

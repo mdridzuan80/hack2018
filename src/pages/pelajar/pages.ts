@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 
 import { ModalController, Platform, NavParams, ViewController } from 'ionic-angular';
+import {ProfilePage} from "../profile/profile";
+import {ResultstatusPage} from "../resultstatus/resultstatus";
+import {SearchbarPage} from "../searchbar/searchbar";
+import {JadualslidesPage} from "../jadualslides/jadualslides";
+import {AsramaPage} from "../asrama/asrama";
 
 
 @Component({
