@@ -80,13 +80,12 @@ export class ListilpPage {
                     this.response = data.json();
                     console.log('aa :',this.response);
 
-                    var status = this.response.saveStatus;
-                    var heroes = this.response.data;
-                    console.log('bb :' ,heroes);
+                    this.heroes = this.response.data;
+                    console.log('bb :' ,this.heroes);
 
                     loading.dismiss();
 
-                    this.showAlert('Terima Kasih', 'Terima kasih. Soal selidik anda telah dihantar');
+                    // this.showAlert('Terima Kasih', 'Terima kasih. Soal selidik anda telah dihantar');
 
                 }, error => {
                     loading.dismiss();

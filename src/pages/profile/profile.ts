@@ -170,7 +170,8 @@ export class ProfilePage {
             buttons: ['OK']
         });
         alert.present();
-    openProfilePage(item) {
+    }
+        openProfilePage(item) {
         this.navCtrl.setRoot(ProfilePage);
     }
 
