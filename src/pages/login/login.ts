@@ -5,6 +5,7 @@ import { Storage } from '@ionic/storage';
 import { AlertController } from 'ionic-angular';
 import {Http} from "@angular/http";
 import {ResultstatusPage} from "../resultstatus/resultstatus";
+import {ProfileparentPage} from "../profileparent/profileparent";
 
 /**
  * Generated class for the LoginPage page.
@@ -81,6 +82,7 @@ export class LoginPage {
                     loading.dismiss();
                     // var data;
                     console.log('savesatatus' + this.response.meta.saveStatus);
+                    console.log('peranan' + this.response.data.peranan);
 
                     if (status == 'pass') {
                         this.showAlert('Nama : ' + this.response.data.name, 'Selamat Datang!');
@@ -90,7 +92,14 @@ export class LoginPage {
                             this.storage.set('nokp', this.response.data.nokp);
                             this.storage.set('name', this.response.data.name);
                         });
-                        this.navCtrl.push(ProfilePage);
+                        if (this.response.data.peranan == 'PELAJAR'){
+                            this.navCtrl.push(ProfilePage);
+                        } else {
+                            this.navCtrl.push(ProfileparentPage);
+                        }
+
+
+
                     } else {
                         this.showAlert('Maaf Tidak Berjaya', 'Sila cuba sekali lagi pada masa akan datang');
                     //

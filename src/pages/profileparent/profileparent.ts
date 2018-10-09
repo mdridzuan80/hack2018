@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-
 /**
- * Generated class for the CareerpathPage page.
+ * Generated class for the ProfileparentPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,17 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-careerpath',
-  templateUrl: 'careerpath.html',
+  selector: 'page-profileparent',
+  templateUrl: 'profileparent.html',
 })
-export class CareerpathPage {
+export class ProfileparentPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CareerpathPage');
+    console.log('ionViewDidLoad ProfileparentPage');
   }
-
 
 }

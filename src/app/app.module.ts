@@ -18,6 +18,10 @@ import { PscychometricPage } from '../pages/pscychometric/pscychometric';
 import { RegisterpscychometricPage } from '../pages/registerpscychometric/registerpscychometric';
 import { CareerpathPage } from '../pages/careerpath/careerpath';
 import { JobsmalaysiaPage } from '../pages/jobsmalaysia/jobsmalaysia';
+import { StudentpscychometricPage } from '../pages/studentpscychometric/studentpscychometric';
+import { ProfileparentPage } from '../pages/profileparent/profileparent';
+import { ListilpPage } from '../pages/listilp/listilp';
+
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -38,7 +42,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       PscychometricPage,
       RegisterpscychometricPage,
       CareerpathPage,
-      JobsmalaysiaPage
+      JobsmalaysiaPage,
+      StudentpscychometricPage,
+      ProfileparentPage,
+      ListilpPage
   ],
   imports: [
       BrowserModule,
@@ -61,7 +68,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       PscychometricPage,
       RegisterpscychometricPage,
       CareerpathPage,
-      JobsmalaysiaPage
+      JobsmalaysiaPage,
+      StudentpscychometricPage,
+      ProfileparentPage,
+      ListilpPage
   ],
   providers: [
     StatusBar,
