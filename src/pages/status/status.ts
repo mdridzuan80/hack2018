@@ -32,9 +32,9 @@ export class StatusPage {
     console.log('ionViewDidLoad StatusPage');
   }
 
-    next() {
-        this.navCtrl.push(ResultstatusPage);
-    }
+    // next() {
+    //     this.navCtrl.push(ResultstatusPage);
+    // }
 
 
     verifyEmployerID() {
@@ -51,41 +51,46 @@ export class StatusPage {
             console.log(this.employer_code);
             //sent to server
             console.log('try to send data to server');
-            //url server
-            // var url = 'http://ihi.test/api/employer/profile';
-            var url = 'http://jpp.mohr.gov.my/api/employer/profile';
-            // var url = 'http://iotg.mohr.favotechsystem.com/api/survey/result';
-            // var url ='http://127.0.0.1:8000/api/survey/result';
-            // var url = 'http://ihiweb.test/api/survey/result';
 
-
-            //
             var sendData = {
                 "employer_code": this.employer_code
             };
+            //url server
+            // var url = 'http://ihi.test/api/employer/profile';
+            // var url = 'http://jpp.mohr.gov.my/api/employer/profile';
+            // var url = 'http://iotg.mohr.favotechsystem.com/api/survey/result';
+            // var url ='http://127.0.0.1:8000/api/survey/result';
+            // var url = 'http://ihiweb.test/api/survey/result';
+            var url = 'http://103.75.190.110/api/permohonan/'+this.employer_code;
 
-            this.http.post(url, sendData)
+
+            //
+
+
+            this.http.get(url)
                 .subscribe(data => {
                     this.response = data.json();
                     console.log(this.response);
 
-                    var status = this.response.saveStatus;
+                    var status = this.response.meta.saveStatus;
+                    var keputusan = this.response.data.keputusan;
                     // var employer_name = this.response.employer_name;
                     // var employer_id = this.response.employer_id;
 
                     loading.dismiss();
 
-                    if (status == 'pass') {
-                        this.showAlert('Nama : ' + this.response.employer_name, 'Tahniah Anda Telah Berjaya!');
+                    if (keputusan == 'LULUS') {
+                        this.showAlert('Nama : ' + this.response.data.nama, 'Tahniah Anda Telah Berjaya!');
 
                         //letak employer_name & id dalam storage
                         this.storage.ready().then(() => {
-                            this.storage.set('employer_name', this.response.employer_name);
-                            this.storage.set('employer_id', this.response.employer_id);
+                            this.storage.set('nama', this.response.data.name);
+                            this.storage.set('nokp', this.response.data.nokp);
                         });
                         this.navCtrl.push(ResultstatusPage);
                     } else {
-                        this.showAlert('Maaf Tidak Berjaya', 'Sila cuba sekali lagi pada masa akan datang');
+                        this.showAlert('Maaf Permohonan Anda Tidak Berjaya', 'Sila cuba sekali lagi pada masa akan datang');
+                        this.navCtrl.setRoot(StatusPage);
 
                     }
                 }, error => {

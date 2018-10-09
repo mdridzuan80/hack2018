@@ -1,0 +1,52 @@
+<!--
+  Generated template for the ApplicationformPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="biru">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Ujian Psikometrik</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      Sila masukkan maklumat anda untuk mendaftar bagi ujian psikometrik :
+      <ion-list inset>
+
+        <ion-item>
+          <ion-label>NO KP :</ion-label>
+          <ion-input type="text" [(ngModel)]="nokp" placeholder="[ 890101146677 ]"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Nama :</ion-label>
+          <ion-input type="text" [(ngModel)]="nama" placeholder="[ Ali Bin Samad ]"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Emel :</ion-label>
+          <ion-input type="text" [(ngModel)]="emel" placeholder="[ ali@gmail.com ]"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>No Tel :</ion-label>
+          <ion-input type="text" [(ngModel)]="notel" placeholder="[ 60179991234 ]"></ion-input>
+        </ion-item>
+
+        <!-- Float the icon left -->
+        <button ion-button block icon-start (click)="verifyEmployerID()">
+          <ion-icon ios="ios-finger-print" md="md-finger-print"></ion-icon>
+          Ujian Psikometrik
+        </button>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

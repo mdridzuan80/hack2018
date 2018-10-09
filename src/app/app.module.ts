@@ -13,8 +13,11 @@ import { ApplicationformPage } from '../pages/applicationform/applicationform';
 import { InfoPage } from '../pages/info/info';
 import { ProfilePage } from '../pages/profile/profile';
 import { ResultstatusPage } from '../pages/resultstatus/resultstatus';
-import { ResultapplicationPage } from '../pages/resultapplication/resultapplication';
 import { SendPage } from '../pages/send/send';
+import { PscychometricPage } from '../pages/pscychometric/pscychometric';
+import { RegisterpscychometricPage } from '../pages/registerpscychometric/registerpscychometric';
+import { CareerpathPage } from '../pages/careerpath/careerpath';
+import { JobsmalaysiaPage } from '../pages/jobsmalaysia/jobsmalaysia';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -31,8 +34,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       InfoPage,
       ProfilePage,
       ResultstatusPage,
-      ResultapplicationPage,
-      SendPage
+      SendPage,
+      PscychometricPage,
+      RegisterpscychometricPage,
+      CareerpathPage,
+      JobsmalaysiaPage
   ],
   imports: [
       BrowserModule,
@@ -51,8 +57,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
       InfoPage,
       ProfilePage,
       ResultstatusPage,
-      ResultapplicationPage,
-      SendPage
+      SendPage,
+      PscychometricPage,
+      RegisterpscychometricPage,
+      CareerpathPage,
+      JobsmalaysiaPage
   ],
   providers: [
     StatusBar,

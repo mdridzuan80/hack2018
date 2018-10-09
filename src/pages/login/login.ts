@@ -23,6 +23,7 @@ export class LoginPage {
     public username: string = '';
     public password: string = '';
     response:any = '';
+    data:any = '';
     public nokp: number;
     public name: string = '';
     surveyResult: any = [];
@@ -73,25 +74,27 @@ export class LoginPage {
                     this.response = data.json();
                     console.log(this.response);
 
-                    var status = this.response.saveStatus;
+                    var status = this.response.meta.saveStatus;
                     // var employer_name = this.response.employer_name;
                     // var employer_id = this.response.employer_id;
 
                     loading.dismiss();
+                    // var data;
+                    console.log('savesatatus' + this.response.meta.saveStatus);
 
-                    // if (status == 'pass') {
-                        this.showAlert('Nama : ' + this.response.name, 'Selamat Datang!');
+                    if (status == 'pass') {
+                        this.showAlert('Nama : ' + this.response.data.name, 'Selamat Datang!');
 
                         //letak employer_name & id dalam storage
                         this.storage.ready().then(() => {
-                            this.storage.set('nokp', this.response.nokp);
-                            this.storage.set('name', this.response.name);
+                            this.storage.set('nokp', this.response.data.nokp);
+                            this.storage.set('name', this.response.data.name);
                         });
                         this.navCtrl.push(ProfilePage);
-                    // } else {
-                    //     this.showAlert('Maaf Tidak Berjaya', 'Sila cuba sekali lagi pada masa akan datang');
+                    } else {
+                        this.showAlert('Maaf Tidak Berjaya', 'Sila cuba sekali lagi pada masa akan datang');
                     //
-                    // }
+                    }
                 }, error => {
                     loading.dismiss();
                     this.showAlert('Ralat', 'Gagal menghantar pengesahan ke server');
